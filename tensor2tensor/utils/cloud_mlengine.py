@@ -360,7 +360,7 @@ def validate_flags():
 
 
 def confirm():
-  out = input("Confirm (Y/n)? > ")
+  out = raw_input("Confirm (Y/n)? > ")
   return out == "Y"
 
 
