@@ -371,7 +371,7 @@ def launch():
   job_name = job_spec["jobId"]
   tf.logging.info("Launching job %s with ML Engine spec:\n%s", job_name,
                   job_spec)
-  assert confirm()
+  # assert confirm()
   train_dir = FLAGS.output_dir
   t2t_tar = tar_and_copy_t2t(train_dir)
   configure_trainer_package(job_spec, t2t_tar)
